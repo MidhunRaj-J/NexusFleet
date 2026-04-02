@@ -163,11 +163,112 @@ body {
   padding: 14px;
 }
 
+.theme-customer {
+  --theme-accent: var(--accent-customer);
+}
+
+.theme-traveler {
+  --theme-accent: var(--accent-traveler);
+}
+
+.theme-admin {
+  --theme-accent: var(--accent-admin);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: rgba(7, 17, 31, 0.72);
+  border: 1px solid color-mix(in srgb, var(--theme-accent) 40%, transparent);
+  color: var(--theme-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
 .hero {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1.3fr 0.95fr 1fr;
   gap: 16px;
   align-items: start;
+}
+
+.hero-showcase {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.orbit {
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  border: 1px dashed rgba(159, 187, 217, 0.16);
+  animation: spin 24s linear infinite;
+}
+
+.orbit-b {
+  inset: 48px;
+  animation-duration: 18s;
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.showcase-card {
+  position: absolute;
+  border-radius: 14px;
+  border: 1px solid rgba(159, 187, 217, 0.18);
+  background: rgba(7, 17, 31, 0.85);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  padding: 12px 14px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.showcase-main {
+  position: relative;
+  z-index: 2;
+  width: min(240px, 80%);
+  text-align: left;
+}
+
+.showcase-main span,
+.showcase-main p {
+  display: block;
+  color: var(--muted);
+}
+
+.showcase-main strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.showcase-top {
+  top: 28px;
+  right: 12px;
+  color: var(--accent-customer);
+}
+
+.showcase-bottom {
+  bottom: 24px;
+  left: 14px;
+  color: var(--accent-traveler);
+  animation-delay: 1s;
 }
 
 .hero h1 {

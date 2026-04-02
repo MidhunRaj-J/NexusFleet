@@ -144,7 +144,7 @@ function App() {
   const roleInfo = ROLE_CONFIG[roleKey];
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell theme-${role}`}>
       <div className="ambient ambient-a" />
       <div className="ambient ambient-b" />
       <header className="topbar">
@@ -159,6 +159,7 @@ function App() {
       <main className="layout">
         <section className="hero card">
           <div>
+            <span className="eyebrow">{role.toUpperCase()} MODE</span>
             <h1>{roleInfo.title}</h1>
             <p>
               {roleInfo.subtitle} NexusFleet now runs with persistent data, role abstractions, live workflow actions,
@@ -183,6 +184,17 @@ function App() {
               ))}
             </div>
           </div>
+          <aside className="hero-showcase card-soft">
+            <div className="orbit orbit-a" />
+            <div className="orbit orbit-b" />
+            <div className="showcase-card showcase-main">
+              <span>Live Logistics Engine</span>
+              <strong>AI Match {bestMatch.score}%</strong>
+              <p>{bestMatch.traveler} is the strongest fit for the selected route.</p>
+            </div>
+            <div className="showcase-card showcase-top">Escrow {activeEscrow > 0 ? 'Locked' : 'Ready'}</div>
+            <div className="showcase-card showcase-bottom">{delivered} Delivered Today</div>
+          </aside>
           <form className="auth card-soft" onSubmit={login}>
             <h3>{role.toUpperCase()} Access</h3>
             <input
