@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Booking - NexusFleet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="bookingPage" class="page-shell">
+  
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html">
+        <img src="assets/logo-no-background.png" alt="NexusFleet" class="logo">
+      </a>
+      <div class="header-actions">
+        <a href="dashboard.html" class="btn btn-sm btn-secondary">Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div style="max-width: 700px; margin: 0 auto;">
+      
+      <div class="card mb-2xl">
+        <div class="card-header">
+          <h1 class="card-title">Create New Booking</h1>
+        </div>
+        
+        <form id="bookingForm" class="card-body stack-lg">
+          <p class="text-muted">Fill in the details below to create a new delivery booking. All data is saved locally.</p>
+          
+          <div class="form-group">
+            <label for="pickupLocation">Pickup Location</label>
+            <input type="text" id="pickupLocation" placeholder="Enter pickup address" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="deliveryLocation">Delivery Location</label>
+            <input type="text" id="deliveryLocation" placeholder="Enter delivery address" required>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
+            <div class="form-group">
+              <label for="weight">Weight (kg)</label>
+              <input type="number" id="weight" placeholder="0.5" min="0" step="0.1" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="itemType">Item Type</label>
+              <select id="itemType" required>
+                <option>Select...</option>
+                <option>Documents</option>
+                <option>Small Package</option>
+                <option>Medium Package</option>
+                <option>Large Package</option>
+              </select>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--spacing-lg);">Create Booking</button>
+        </form>
+      </div>
+
+      <!-- QUICK GUIDE -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Quick Tips</h2>
+        </div>
+        <div class="card-body stack">
+          <div>
+            <h4>Be Specific</h4>
+            <p class="text-muted font-sm">Precise addresses help avoid delays.</p>
+          </div>
+          <div>
+            <h4>Get a Quote First</h4>
+            <p class="text-muted font-sm"><a href="payments.html">Check pricing</a> before confirming your booking.</p>
+          </div>
+          <div>
+            <h4>Track Everything</h4>
+            <p class="text-muted font-sm">All bookings appear in your <a href="dashboard.html">dashboard</a> instantly.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

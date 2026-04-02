@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - NexusFleet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-shell">
+  
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html">
+        <img src="assets/logo-no-background.png" alt="NexusFleet" class="logo">
+      </a>
+      <div class="header-actions">
+        <a href="login_page.html" class="btn btn-sm btn-secondary">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="mb-2xl">
+      <h1 style="text-align: center; margin-bottom: var(--spacing-lg);">NexusFleet Product Architecture</h1>
+      <p style="text-align: center; max-width: 860px; margin: 0 auto var(--spacing-lg); font-size: var(--font-size-lg); color: var(--color-grey-600);">
+        NexusFleet is a community-powered delivery network where travelers earn while moving, customers get faster delivery, and the platform enforces trust through escrow, tracking, verification, and incentives.
+      </p>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">1. User Roles and Accounts</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Customer</h3><p>Signup/login, profile, saved payment methods, order history, live tracking.</p></div>
+        <div class="card"><h3>Traveler</h3><p>KYC onboarding, route posting, request acceptance, earnings dashboard.</p></div>
+        <div class="card"><h3>Admin</h3><p>Approvals, moderation, dispute handling, safety controls, analytics command center.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">2. Order and Matching Engine</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>Create Order</h3><p>Pickup, drop, item/weight, urgency, price suggestion or auto-quote.</p></div>
+        <div class="card"><h3>Matching Logic</h3><p>Route similarity, time overlap, capacity fit, AI confidence score.</p></div>
+        <div class="card"><h3>Booking Flow</h3><p>Traveler accepts, customer confirms, escrow locks payment.</p></div>
+        <div class="card"><h3>Delivery Completion</h3><p>OTP + photo proof + status transitions from pickup to delivered.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">3. Payments, Earnings, and Escrow</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Customer Payments</h3><p>UPI, card, wallet style flow at order placement.</p></div>
+        <div class="card"><h3>Traveler Earnings</h3><p>Base payout + bonus from ratings, volume, and referrals.</p></div>
+        <div class="card"><h3>Escrow Security</h3><p>Funds stay locked until delivery proof and confirmation.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">4. Tracking, Trust, and Safety</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Tracking</h3><p>Live GPS, ETA estimation, route visualization, milestone updates.</p></div>
+        <div class="card"><h3>Trust Stack</h3><p>KYC verification, two-way ratings and reviews, proof-of-delivery.</p></div>
+        <div class="card"><h3>Safety Controls</h3><p>Issue reporting, dispute workflows, anti-spam and fraud flags.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">5. Gamification and Incentives (Differentiator)</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>Rewards Economy</h3><p>Points coins, cashback, referral bonuses, and repeat-use rewards.</p></div>
+        <div class="card"><h3>Loyalty and Competition</h3><p>Bronze/Silver/Gold tiers and traveler leaderboards.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">Smart Features and Future Expansion</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>AI and Dynamic Pricing</h3><p>Predict best traveler and optimize price by distance, urgency, demand.</p></div>
+        <div class="card"><h3>Advanced Features</h3><p>Multi-package trips, travel-planning integration, store dispatch support.</p></div>
+        <div class="card"><h3>Intercity Growth</h3><p>Kerala ↔ Tamil Nadu routes and offline-first sync roadmap.</p></div>
+      </div>
+    </section>
+
+    <section class="mb-2xl">
+      <h2 class="mb-lg">Tech Stack Direction</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>MERN Platform</h3><p>Node.js + Express backend, MongoDB datastore, React frontend evolution.</p></div>
+        <div class="card"><h3>Platform Integrations</h3><p>Google Maps API, Socket.io realtime, Razorpay/Stripe payments.</p></div>
+      </div>
+    </section>
+
+    <section style="text-align: center; padding: var(--spacing-2xl); background: var(--color-grey-100); border-radius: var(--radius-lg);">
+      <h2 class="mb-lg">Five Pillars That Drive NexusFleet</h2>
+      <p style="margin-bottom: var(--spacing-xl);">User System • Order + Matching • Payment + Rewards • Tracking + Trust • Smart Optimization</p>
+      <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+        <a href="login_page.html" class="btn btn-primary btn-lg">Open Platform</a>
+        <a href="dashboard.html" class="btn btn-secondary btn-lg">View Role Dashboards</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="text-align: center; padding: 3rem 1rem; color: var(--color-grey-500); border-top: 1px solid var(--color-grey-200);">
+    <p>&copy; 2024 NexusFleet. Delivering fast, keeping it simple.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

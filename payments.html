@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - NexusFleet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="paymentsPage" class="page-shell">
+  
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html">
+        <img src="assets/logo-no-background.png" alt="NexusFleet" class="logo">
+      </a>
+      <div class="header-actions">
+        <a href="dashboard.html" class="btn btn-sm btn-secondary">Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div style="max-width: 700px; margin: 0 auto;">
+      
+      <div class="card mb-2xl">
+        <div class="card-header">
+          <h1 class="card-title">Delivery Pricing Calculator</h1>
+        </div>
+        
+        <form id="paymentForm" class="card-body stack-lg">
+          <p class="text-muted">Get an instant quote based on package weight, distance, and delivery speed.</p>
+          
+          <div class="form-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" placeholder="0.5" min="0" step="0.1" required>
+            <span class="form-help-text">Base: ₹50 per kg</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="distance">Distance (km)</label>
+            <input type="number" id="distance" placeholder="10" min="0" step="0.1" required>
+            <span class="form-help-text">Base: ₹2 per km</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="deliverySpeed">Delivery Speed</label>
+            <select id="deliverySpeed" required>
+              <option value="standard">Standard Delivery</option>
+              <option value="express">Express Delivery (+50%)</option>
+              <option value="scheduled">Scheduled Delivery (-20%)</option>
+            </select>
+          </div>
+
+          <div style="background: var(--color-grey-100); padding: var(--spacing-lg); border-radius: var(--radius-md); margin: var(--spacing-lg) 0;">
+            <p class="text-muted font-sm" style="margin-bottom: var(--spacing-sm);">Estimated Total</p>
+            <div style="font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-primary);" id="totalPrice">₹0.00</div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Save Quote</button>
+        </form>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">How It Works</h2>
+        </div>
+        <div class="card-body">
+          <div class="stack-lg">
+            <div>
+              <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">1. Base Price</h4>
+              <p class="text-muted">Weight × ₹50 + Distance × ₹2</p>
+            </div>
+            <div>
+              <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">2. Speed Multiplier</h4>
+              <p class="text-muted">Express adds 50% • Scheduled saves 20%</p>
+            </div>
+            <div>
+              <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">3. Save Your Quote</h4>
+              <p class="text-muted">All quotes are stored locally. Review them in your dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

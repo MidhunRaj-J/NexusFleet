@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NexusFleet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="loginPage" class="page-shell">
+  
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html">
+        <img src="assets/logo-no-background.png" alt="NexusFleet" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div style="max-width: 500px; margin: 2rem auto;">
+      
+      <!-- ROLE TABS -->
+      <div class="tabs">
+        <button type="button" class="tab active" data-auth-tab="customer">Customer</button>
+        <button type="button" class="tab" data-auth-tab="partner">Traveler</button>
+        <button type="button" class="tab" data-auth-tab="admin">Admin</button>
+      </div>
+
+      <!-- CUSTOMER LOGIN -->
+      <div data-auth-panel="customer" class="tab-panel active">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Customer Login</h2>
+          </div>
+          
+          <form id="customerLoginForm" class="card-body stack-lg">
+            <div class="form-group">
+              <label for="customerEmail">Email Address</label>
+              <input type="email" id="customerEmail" placeholder="your@email.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="customerPassword">Password</label>
+              <input type="password" id="customerPassword" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            
+            <p style="text-align: center; font-size: var(--font-size-sm); color: var(--color-grey-500);">
+              Demo: Enter any email and password
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- PARTNER LOGIN -->
+      <div data-auth-panel="partner" class="tab-panel" hidden>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Traveler Login</h2>
+          </div>
+          
+          <form id="partnerLoginForm" class="card-body stack-lg">
+            <div class="form-group">
+              <label for="partnerEmail">Email Address</label>
+              <input type="email" id="partnerEmail" placeholder="partner@email.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="partnerPassword">Password</label>
+              <input type="password" id="partnerPassword" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            
+            <p style="text-align: center; font-size: var(--font-size-sm); color: var(--color-grey-500);">
+              Demo: Enter any email and password
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div data-auth-panel="admin" class="tab-panel" hidden>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Admin Login</h2>
+          </div>
+
+          <form id="adminLoginForm" class="card-body stack-lg">
+            <div class="form-group">
+              <label for="adminEmail">Admin Email</label>
+              <input type="email" id="adminEmail" placeholder="admin@nexusfleet.app" required>
+            </div>
+
+            <div class="form-group">
+              <label for="adminPassword">Password</label>
+              <input type="password" id="adminPassword" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Enter Admin Panel</button>
+
+            <p style="text-align: center; font-size: var(--font-size-sm); color: var(--color-grey-500);">
+              Demo: Use any admin email and password
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER LINKS -->
+      <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--color-grey-200);">
+        <p class="text-muted font-sm">Don't have an account? <a href="about.html" class="text-success">Learn more</a></p>
+        <p class="text-muted font-sm" style="margin-top: 0.5rem;"><a href="index.html">← Back home</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
