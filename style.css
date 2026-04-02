@@ -1,0 +1,190 @@
+.video-background {
+  position: fixed; /* Fixed position to stay in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.video-background video {
+  min-width: 100%; /* Ensures the video covers the full width */
+  min-height: 100%; /* Ensures the video covers the full height */
+  width: auto;
+  height: auto;
+  position: absolute; /* Allows for proper positioning */
+  top: 50%; /* Centers the video */
+  left: 50%; /* Centers the video */
+  transform: translate(-50%, -50%); /* Centers the video */
+}
+
+/* Overlay for blur effect */
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  z-index: 0; /* Make sure it is on top of the video but behind content */
+}
+body {
+  margin: 0;
+  background-color: rgb(50, 37, 37);
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/background1.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.login-container {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-image: linear-gradient(135deg, #1F1A20, #6A707E, #536493);
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  height: auto;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Form control styles */
+/* Ensure the text inside input fields is visible */
+.form-control {
+  background-color: #2E2B33; /* Dark background for input */
+  border: none;
+  color: white; /* Set text color to white */
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px; /* Ensure text size is readable */
+}
+
+/* Custom placeholder color to make it visible */
+.form-control::placeholder {
+  color: #bbb; /* Light gray for the placeholder text */
+  opacity: 1; /* Ensure full visibility of the placeholder */
+}
+
+/* Input field focus state */
+.form-control:focus {
+  background-color: #2E2B33;
+  border-color: #00A4D3; /* Highlighted border color on focus */
+  outline: none;
+  box-shadow: none;
+  color:white;
+}
+
+/* Input field hover state */
+.form-control:hover {
+  border-color: #00A4D3;
+  
+}
+.video-background {
+  position: fixed; /* Fixed position to stay in the background */
+  top: 0;
+  background-size:cover;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.logo {
+  height: 250px;
+  border-radius: 20px;
+  width: auto;
+}
+
+.nav-logo {
+  height: 128px;
+  width: auto;
+}
+
+.linker {
+  color: rgb(227, 205, 205);
+  font-weight: bold;
+}
+
+.partner-login-btn {
+  background-image: linear-gradient(135deg, #4b6cb7, #182848); /* Gradient background */
+  color: white; /* White text */
+  padding: 12px 20px; /* More padding for a larger button */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.partner-login-btn:hover {
+  background-image: linear-gradient(135deg, #4b6cb7, #3c5c80); /* Change gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.partner-login-btn:focus {
+  outline: none; /* Remove outline on focus */
+}
+.card-contain{
+  height:70vh;
+  width:90vw;
+  color:white;
+  background-image:linear-gradient(#345266,#53465a);
+  border-radius:15px;
+  padding:24px;
+}
+.map{
+  height:30vh;
+  width:50vh;
+  border-radius:5px;
+
+}
+
+/*balamnce*/
