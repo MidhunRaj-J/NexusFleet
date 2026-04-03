@@ -26,7 +26,8 @@ export function PaymentsPage({ role, orders, transactions, wallet, setWallet, ad
           <button type="submit">Capture Payment</button>
           <div className="status-stack">
             <div className="status-row"><span>Escrow holding</span><strong>Active</strong></div>
-            <div className="status-row"><span>Wallet balance</span><strong>₹{wallet.balance}</strong></div>
+            <div className="status-row"><span>Platform wallet</span><strong>₹{wallet.walletBalance}</strong></div>
+            <div className="status-row"><span>Traveler balance</span><strong>₹{wallet.travelerBalance}</strong></div>
           </div>
         </form>
 

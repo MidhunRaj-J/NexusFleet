@@ -414,6 +414,169 @@ button[type='submit']:hover,
   grid-template-columns: 1fr;
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.segmented-control,
+.quick-message-row,
+.action-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.segmented-control button,
+.chip-toggle,
+.toggle-row,
+.status-badge,
+.warning-pill,
+.validation-pill {
+  border: 1px solid rgba(165, 183, 206, 0.18);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(8, 15, 25, 0.6);
+  color: var(--text);
+}
+
+.segmented-control button.active {
+  border-color: rgba(103, 242, 183, 0.36);
+  background: rgba(103, 242, 183, 0.14);
+}
+
+.chip-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chip-toggle input,
+.toggle-row input {
+  accent-color: var(--primary);
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.validation-pill.ok,
+.status-badge.ok {
+  border-color: rgba(103, 242, 183, 0.36);
+  color: var(--primary);
+}
+
+.validation-pill.warn,
+.status-badge.warn,
+.warning-pill {
+  border-color: rgba(255, 212, 107, 0.32);
+  color: var(--accent-admin);
+}
+
+.chat-box {
+  display: grid;
+  gap: 10px;
+}
+
+.chat-message {
+  border: 1px solid rgba(165, 183, 206, 0.14);
+  border-radius: 16px;
+  padding: 12px 14px;
+  background: rgba(8, 15, 25, 0.54);
+  display: grid;
+  gap: 4px;
+}
+
+.chat-message span {
+  color: var(--muted);
+}
+
+textarea {
+  width: 100%;
+  min-height: 96px;
+  resize: vertical;
+  border: 1px solid rgba(165, 183, 206, 0.24);
+  background: rgba(8, 15, 25, 0.76);
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 12px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.tracking-map {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0;
+}
+
+.map-pin {
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(103, 242, 183, 0.12);
+  border: 1px solid rgba(103, 242, 183, 0.24);
+  color: var(--primary);
+  font-size: 0.85rem;
+}
+
+.map-route {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(103, 242, 183, 0.2), rgba(112, 175, 255, 0.9), rgba(103, 242, 183, 0.2));
+}
+
+.analytics-grid .mini-card {
+  display: grid;
+  gap: 8px;
+}
+
+.analytics-grid .mini-card strong {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.status-badge,
+.warning-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+}
+
+.address-card {
+  text-align: left;
+  border: 1px solid rgba(165, 183, 206, 0.16);
+  background: rgba(8, 15, 25, 0.54);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.address-card.active {
+  border-color: rgba(103, 242, 183, 0.34);
+  background: rgba(103, 242, 183, 0.08);
+}
+
+.stack-list {
+  display: grid;
+  gap: 10px;
+}
+
+.bottom-grid {
+  margin-top: 2px;
+}
+
 .auth,
 .form-card,
 .panel-card {

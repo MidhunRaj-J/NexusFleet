@@ -2,8 +2,11 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home' },
-  { to: '/login', label: 'Login' },
+  { to: '/auth', label: 'Login' },
+  { to: '/profile', label: 'Profile' },
   { to: '/customer', label: 'Customer' },
+  { to: '/tracking', label: 'Tracking' },
+  { to: '/payments', label: 'Payments' },
   { to: '/traveler', label: 'Traveler' },
   { to: '/admin', label: 'Admin' },
 ];
