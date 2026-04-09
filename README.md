@@ -1,5 +1,9 @@
 # NexusFleet
 
+<p align="center">
+  <img src="src/assets/logo-wordmark.svg" alt="NexusFleet wordmark" width="520" />
+</p>
+
 NexusFleet is a role-based logistics experience where customers book deliveries, travelers monetize routes, and admins manage trust operations in one modern React + Vite app.
 
 [![Stars](https://img.shields.io/github/stars/MidhunRaj-J/NexusFleet?style=social)](https://github.com/MidhunRaj-J/NexusFleet/stargazers)

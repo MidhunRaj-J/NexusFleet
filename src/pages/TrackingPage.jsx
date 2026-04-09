@@ -10,7 +10,7 @@ export function TrackingPage({ role, orders, trackingOrderId, setTrackingOrderId
       role={role}
       eyebrow="TRACKING"
       title="Live delivery tracking and ETA monitoring"
-      subtitle="This screen shows the current order state, live milestones, and delay alerts in one place."
+      subtitle="Monitor order progress, milestone completion, and ETA health from a single tracking dashboard."
     >
       <div className="grid split">
         <article className="card panel-card">

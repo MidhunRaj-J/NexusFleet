@@ -21,8 +21,8 @@ export function TravelerPage({
     <PageShell
       role={role}
       eyebrow="TRAVELER OPERATIONS"
-      title="Onboarding, route publishing, and availability management sit on their own page"
-      subtitle="This screen covers traveler verification, route creation, recurring trips, and live availability."
+      title="Traveler onboarding, route publishing, and availability management"
+      subtitle="Complete verification, create recurring routes, and manage live availability from the operations workspace."
       actions={(
         <div className="status-stack compact-stack">
           <div className="status-row"><span>Rewards</span><strong>{rewardsPoints}</strong></div>

@@ -1,0 +1,42 @@
+<svg width="940" height="260" viewBox="0 0 940 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexusFleet wordmark logo">
+  <defs>
+    <linearGradient id="nfw-bg" x1="28" y1="24" x2="268" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1A2E"/>
+      <stop offset="1" stop-color="#123A56"/>
+    </linearGradient>
+    <linearGradient id="nfw-route" x1="62" y1="78" x2="234" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73F0C4"/>
+      <stop offset="1" stop-color="#6ABEFF"/>
+    </linearGradient>
+    <linearGradient id="nfw-n" x1="72" y1="64" x2="220" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FAFF"/>
+      <stop offset="1" stop-color="#A7DFFF"/>
+    </linearGradient>
+    <linearGradient id="nfw-text" x1="360" y1="66" x2="880" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF6FF"/>
+      <stop offset="1" stop-color="#73F0C4"/>
+    </linearGradient>
+    <filter id="nfw-glow" x="46" y="58" width="204" height="146" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="20" y="20" width="240" height="220" rx="56" fill="url(#nfw-bg)"/>
+  <rect x="28" y="28" width="224" height="204" rx="48" stroke="rgba(130, 194, 255, 0.35)" stroke-width="2"/>
+
+  <path d="M68 174L104 88L140 148L176 92L212 124" stroke="url(#nfw-route)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#nfw-glow)"/>
+  <path d="M82 184V74L140 144V74L198 184V74" stroke="url(#nfw-n)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+
+  <circle cx="68" cy="174" r="9" fill="#73F0C4"/>
+  <circle cx="104" cy="88" r="9" fill="#73F0C4"/>
+  <circle cx="140" cy="148" r="9" fill="#9FD9FF"/>
+  <circle cx="176" cy="92" r="9" fill="#9FD9FF"/>
+  <circle cx="212" cy="124" r="9" fill="#9FD9FF"/>
+
+  <text x="312" y="125" fill="url(#nfw-text)" font-size="88" font-family="'Space Grotesk', 'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="800" letter-spacing="3">NEXUS</text>
+  <text x="312" y="198" fill="#73F0C4" font-size="78" font-family="'Space Grotesk', 'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="700" letter-spacing="10">FLEET</text>
+</svg>

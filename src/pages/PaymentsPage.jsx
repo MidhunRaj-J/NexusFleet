@@ -5,7 +5,7 @@ export function PaymentsPage({ role, orders, transactions, wallet, setWallet, ad
     <PageShell
       role={role}
       eyebrow="PAYMENTS"
-      title="Booking payments, escrow, and earnings sit on their own page"
+      title="Booking payments, escrow, and traveler earnings"
       subtitle="Manage customer checkout, traveler earnings, escrow flow, and refunds in one payments workspace."
     >
       <div className="grid split">

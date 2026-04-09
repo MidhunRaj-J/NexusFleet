@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home' },
@@ -18,7 +19,7 @@ export function PageShell({ role, title, subtitle, eyebrow, children, actions, f
       <div className="ambient ambient-b" />
       <header className="topbar">
         <Link to="/" className="brand-mark" aria-label="NexusFleet home">
-          <span className="brand-orb" />
+          <img src={logo} alt="NexusFleet" className="brand-logo" />
           <span>
             <strong>NexusFleet</strong>
             <small>Refined logistics operations</small>

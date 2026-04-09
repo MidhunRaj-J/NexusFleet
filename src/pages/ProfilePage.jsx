@@ -18,7 +18,7 @@ export function ProfilePage({ role, profile, setProfile, sessions, setSessions, 
       role={role}
       eyebrow="PROFILE"
       title="Manage identity, saved addresses, and notification preferences"
-      subtitle="This page centralizes the user account controls that were previously spread across the app."
+      subtitle="Manage your account details, trusted devices, addresses, and notification preferences in one profile center."
     >
       <div className="grid split">
         <form className="card form-card">

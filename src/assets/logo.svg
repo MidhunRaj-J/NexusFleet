@@ -1,10 +1,36 @@
-<svg width="180" height="44" viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="1" y="1" width="42" height="42" rx="12" fill="#0B1524"/>
-  <path d="M11 30L20 14L27 25L33 14" stroke="#2CF0A3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="11" cy="30" r="2.6" fill="#2CF0A3"/>
-  <circle cx="20" cy="14" r="2.6" fill="#2CF0A3"/>
-  <circle cx="27" cy="25" r="2.6" fill="#2CF0A3"/>
-  <circle cx="33" cy="14" r="2.6" fill="#2CF0A3"/>
-  <text x="54" y="19" fill="#0B1524" font-size="16" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-weight="800">NEXUS</text>
-  <text x="54" y="35" fill="#19A971" font-size="16" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-weight="800">FLEET</text>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexusFleet logo">
+  <defs>
+    <linearGradient id="nf-bg" x1="34" y1="26" x2="224" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1A2E"/>
+      <stop offset="1" stop-color="#123A56"/>
+    </linearGradient>
+    <linearGradient id="nf-route" x1="62" y1="72" x2="196" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73F0C4"/>
+      <stop offset="1" stop-color="#6ABEFF"/>
+    </linearGradient>
+    <linearGradient id="nf-n" x1="76" y1="70" x2="180" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF7FF"/>
+      <stop offset="1" stop-color="#A7DFFF"/>
+    </linearGradient>
+    <filter id="nf-glow" x="44" y="58" width="168" height="140" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#nf-bg)"/>
+  <rect x="24" y="24" width="208" height="208" rx="48" stroke="rgba(130, 194, 255, 0.35)" stroke-width="2"/>
+
+  <path d="M64 172L96 88L128 146L160 90L192 120" stroke="url(#nf-route)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#nf-glow)"/>
+
+  <path d="M78 182V74L128 142V74L178 182V74" stroke="url(#nf-n)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+
+  <circle cx="64" cy="172" r="9" fill="#73F0C4"/>
+  <circle cx="96" cy="88" r="9" fill="#73F0C4"/>
+  <circle cx="128" cy="146" r="9" fill="#9FD9FF"/>
+  <circle cx="160" cy="90" r="9" fill="#9FD9FF"/>
+  <circle cx="192" cy="120" r="9" fill="#9FD9FF"/>
 </svg>

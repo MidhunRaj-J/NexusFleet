@@ -34,7 +34,7 @@ export function CustomerPage({
       role={role}
       eyebrow="CUSTOMER WORKSPACE"
       title="Order creation, matching, booking, chat, and verification live here"
-      subtitle="This page now covers the full customer journey from shipment details to traveler matching and post-delivery review."
+      subtitle="Create shipments, compare traveler matches, coordinate in chat, and complete post-delivery reviews in one workspace."
       actions={(
         <div className="hero-metrics">
           <div><strong>₹<AnimatedNumber value={dynamicPrice} decimals={0} /></strong><span>Price</span></div>
