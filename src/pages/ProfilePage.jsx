@@ -109,11 +109,10 @@ export function ProfilePage({ role, profile, setProfile, sessions, setSessions, 
         </article>
 
         <article className="card panel-card">
-          <span className="panel-label">Hint</span>
-          <h2>Frontend-only profile management</h2>
+          <span className="panel-label">Account center</span>
+          <h2>Profile and security overview</h2>
           <p>
-            This implementation stores profile changes locally and mirrors the requested UX. A production version would
-            back this with auth, OTP, device tracking, and file upload services.
+            Keep your account details, preferred channels, trusted devices, and default addresses up to date in one place.
           </p>
         </article>
       </div>

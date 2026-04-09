@@ -14,8 +14,8 @@ export function LandingPage({ role, setRole, roleInfo, ordersCount, routeCount, 
     <PageShell
       role={role}
       eyebrow="NEXUSFLEET PLATFORM"
-      title="A cleaner logistics product with distinct pages for each workflow"
-      subtitle="Customers book deliveries, travelers publish routes, and admins manage trust in focused spaces instead of one crowded screen."
+      title="Unified logistics platform for customers, travelers, and admins"
+      subtitle="Manage bookings, routes, and trust operations through dedicated workspaces built for speed and clarity."
       actions={(
         <>
           <button type="button" className="hero-button" onClick={() => openRole('customer')}>Open Customer Flow</button>
@@ -46,10 +46,10 @@ export function LandingPage({ role, setRole, roleInfo, ordersCount, routeCount, 
       <div className="grid split">
         <article className="card panel-card">
           <span className="panel-label">Refined structure</span>
-          <h2>Each audience gets its own page.</h2>
+          <h2>Dedicated workspaces for every role.</h2>
           <p>
-            The interface now separates customer booking, traveler operations, and admin review so the app feels more
-            like a product and less like an all-in-one demo board.
+            Customers create and track deliveries, travelers manage routes and jobs, and admins oversee moderation,
+            disputes, and platform performance in streamlined role-specific views.
           </p>
         </article>
         <article className="card panel-card accent-panel">

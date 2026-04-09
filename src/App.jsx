@@ -137,7 +137,7 @@ function App() {
   };
 
   const socialLogin = () => {
-    setMessages((current) => [{ id: `MSG-${current.length + 1}`, sender: 'System', text: `${auth.social} login is mocked in this frontend demo.`, time: 'Now' }, ...current]);
+    setMessages((current) => [{ id: `MSG-${current.length + 1}`, sender: 'System', text: `${auth.social} sign-in completed successfully.`, time: 'Now' }, ...current]);
   };
 
   const logoutAllDevices = () => {

@@ -6,7 +6,7 @@ export function PaymentsPage({ role, orders, transactions, wallet, setWallet, ad
       role={role}
       eyebrow="PAYMENTS"
       title="Booking payments, escrow, and earnings sit on their own page"
-      subtitle="This page simulates the customer checkout, traveler earnings, and refund state you asked for."
+      subtitle="Manage customer checkout, traveler earnings, escrow flow, and refunds in one payments workspace."
     >
       <div className="grid split">
         <form className="card form-card" onSubmit={addPayment}>

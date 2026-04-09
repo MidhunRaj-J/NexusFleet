@@ -1,116 +1,117 @@
 # NexusFleet
 
-NexusFleet is a community-driven logistics platform rebuilt as a modern React + Vite application with routed pages. It simulates a real delivery marketplace where customers create orders, travelers publish routes and earn from trips, and admins manage trust, disputes, and platform health.
+NexusFleet is a role-based logistics experience where customers book deliveries, travelers monetize routes, and admins manage trust operations in one modern React + Vite app.
 
-## What It Does
+[![Stars](https://img.shields.io/github/stars/MidhunRaj-J/NexusFleet?style=social)](https://github.com/MidhunRaj-J/NexusFleet/stargazers)
+![License](https://img.shields.io/github/license/MidhunRaj-J/NexusFleet)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+[![Build](https://img.shields.io/github/actions/workflow/status/MidhunRaj-J/NexusFleet/ci.yml?branch=main&label=build)](https://github.com/MidhunRaj-J/NexusFleet/actions)
 
-- Dedicated landing page with clear role entry points
-- Customer page for creating delivery requests with dynamic pricing and match scoring
-- Traveler page for publishing routes, accepting jobs, and simulating earnings
-- Admin page for KYC review, dispute handling, and platform moderation
-- Escrow-style delivery lifecycle with staged status updates
-- Gamification features like rewards points, loyalty tiers, and traveler leaderboard
-- Persistent browser-based state using local storage
+## Why NexusFleet Exists
+
+Most local delivery flows break because booking, route intelligence, and trust workflows are scattered across disconnected tools.
+
+NexusFleet combines:
+
+- Customer booking and pricing
+- Traveler route publishing and fulfillment
+- Admin KYC and dispute operations
+- Escrow-inspired payment lifecycle
+
+The goal is simple: make community logistics fast, transparent, and operationally safer.
+
+## Core Capabilities
+
+- Role-based pages for Customer, Traveler, and Admin
+- Dynamic pricing based on distance, weight, urgency, and constraints
+- Traveler ranking and ETA insights
+- Delivery lifecycle tracking from Placed to Delivered
+- Escrow and payout handling with wallet movements
+- KYC approvals, dispute filing, and dispute resolution
+- Rewards tiers, reviews, and support chat signals
+- Persistent browser state via local storage
+
+## 60-Second Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Run
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL shown by Vite (usually `http://localhost:5173`).
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
 
 ## Tech Stack
 
 - React 18
-- Vite
-- React Router for page-level navigation
-- Vanilla state and hooks
-- Local storage for persistence
-- CSS-driven animated UI with route-specific layouts
+- Vite 5
+- React Router 6
+- React Transition Group
+- Local storage persistence
 
-## Core Features
-
-### Customer
-- Open the customer page directly or from the landing page
-- Create delivery orders
-- Set pickup, drop, weight, distance, capacity, and urgency
-- See dynamic price calculation
-- See AI-style traveler match score
-- Review recent shipments and delivery state
-
-### Traveler
-- Open the traveler page directly or from the landing page
-- Publish travel routes
-- Accept the latest order
-- Track earnings-style gamification
-- View route board and leaderboard context
-
-### Admin
-- Open the admin page directly or from the landing page
-- Review KYC queue
-- Approve users
-- Open and resolve disputes
-- View operational platform signals
-
-### Platform Intelligence
-- Dynamic pricing simulation
-- Escrow lock/release simulation
-- Route matching score
-- Loyalty tier progression
-- Notifications feed
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ recommended
-- npm
-
-### Install
-
-```bash
-npm install
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-Then open the local URL shown in the terminal.
-
-### Build for production
-
-```bash
-npm run build
-```
-
-### Preview the production build
-
-```bash
-npm run preview
-```
-
-## Project Structure
+## Project Layout
 
 ```text
 src/
-  App.jsx              Main application UI and workflow logic
-  main.jsx             React entry point
-  styles.css           Global design system and animations
-  assets/logo.svg      Branding logo
-  config/roles.js      Role definitions and seed data
-  hooks/usePersistentState.js  Local storage state helper
+  App.jsx
+  main.jsx
+  styles.css
+  components/
+    AnimatedNumber.jsx
+    PageShell.jsx
+    PageTransition.jsx
+  config/
+    roles.js
+  hooks/
+    usePersistentState.js
+  lib/
+    platform.js
+    logistics.js
+  pages/
+    AdminPage.jsx
+    CustomerPage.jsx
+    LandingPage.jsx
+    LoginPage.jsx
+    PaymentsPage.jsx
+    ProfilePage.jsx
+    TrackingPage.jsx
+    TravelerPage.jsx
 ```
 
-## Notes
 
-- The app currently runs as a frontend demo with persistent browser state.
-- It is ready to be extended into a full backend-driven product using Node.js, Express, MongoDB, Socket.io, and payments integration.
-- Legacy static HTML files still exist in the repository, but the React app in `src/` is the active implementation.
+## Contributing
 
-## Roadmap Ideas
+Contributions are welcome and encouraged.
 
-- Real authentication and user accounts
-- MongoDB-backed orders, routes, disputes, and payouts
-- Socket-based live tracking updates
-- Razorpay or Stripe integration
-- Maps and route visualization
-- Notifications and admin analytics dashboards
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+
+- Setup instructions
+- Branch and PR workflow
+- Quality checklist before opening a PR
+
+## Roadmap
+
+- Backend APIs for orders, routes, disputes, and payouts
+- Real authentication and role permissions
+- Maps and live route tracking
+- Real payment gateway integration
+- Notifications and analytics dashboard
+- End-to-end and component test coverage
 
 ## License
 
-No license has been specified for this project.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).

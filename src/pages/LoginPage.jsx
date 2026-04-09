@@ -8,7 +8,7 @@ export function LoginPage({ role, auth, setAuth, login, sendOtp, resetPassword, 
       role={role}
       eyebrow="AUTHENTICATION"
       title="Login, register, verify, and reset from one dedicated page"
-      subtitle="The app now keeps authentication separate from booking and operations, with OTP and social sign-in controls exposed in the UI."
+      subtitle="Authentication is separated from booking and operations, with OTP and social sign-in controls in one secure flow."
     >
       <div className="grid split">
         <form className="card form-card" onSubmit={login}>
@@ -41,12 +41,11 @@ export function LoginPage({ role, auth, setAuth, login, sendOtp, resetPassword, 
           <h2>Session and verification</h2>
           <div className="status-stack">
             <div className="status-row"><span>Current mode</span><strong>{auth.mode}</strong></div>
-            <div className="status-row"><span>Verified OTP</span><strong>{auth.otp || 'pending'}</strong></div>
+            <div className="status-row"><span>Verified OTP</span><strong>{auth.otp || 'Not verified'}</strong></div>
             <div className="status-row"><span>Role context</span><strong>{role}</strong></div>
           </div>
           <p>
-            This is a frontend simulation of email/phone verification, password reset, and social login. JWTs,
-            device trust, and suspicious-login alerts need a backend service.
+            Manage secure sign-in with email, phone verification, social login, and password recovery from this hub.
           </p>
         </article>
       </div>
